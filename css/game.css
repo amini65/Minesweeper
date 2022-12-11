@@ -1,0 +1,850 @@
+#goal {
+    background-color: #006635;
+    /*width: 1070px;*/
+}
+
+@media only screen and (min-width: 1000px) {
+    #goal {
+        background-color: #006635;
+        width: 1070px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .listItem>div {
+        color: white;
+        font-size: 10px;
+    }
+    .listItem>img {
+        width: 8px;
+    }
+    .listItem {
+        line-height: 25px;
+    }
+    #bords {
+        margin-top: 20px!important;
+    }
+}
+
+#board {
+    position: relative;
+}
+
+#bords {
+    position: relative;
+}
+
+#charc {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    z-index: 100;
+}
+
+.colorGreen {
+    color: #006838;
+}
+
+.imgBomb {
+    width: 41px;
+    height: 54px
+}
+
+.imgCoin {
+    width: 54px;
+    /*height: 54px*/
+}
+
+.imgExpom,
+.expo {
+    width: 41px;
+    height: 54px
+}
+
+label {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.box-bet {
+    background-color: #183319;
+    border-radius: 13px;
+    min-height: 130px;
+}
+
+.colorBlack {
+    color: black;
+}
+
+.bg1 {
+    background-color: #cccc64;
+}
+
+.w55 {
+    width: 55px!important;
+    height: 55px!important;
+}
+
+.w64 {
+    width: 65px!important;
+    height: 65px!important;
+}
+
+.w78 {
+    width: 78px!important;
+    height: 78px!important;
+}
+
+.ratio {
+    text-align: center;
+    color: black;
+    padding: 5px;
+    background-color: #cccc64 !important;
+    border-radius: 5px;
+    height: 20px!important;
+}
+
+.btn2 {
+    padding: 0.14rem!important;
+    margin: 0.175rem!important;
+}
+
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.btn {
+    padding: .84rem 0.84rem;
+}
+
+.item {
+    background-color: #a8d48c;
+}
+
+.active {
+    background-color: #fff!important;
+}
+
+.primary-header-image {
+    position: relative;
+    top: 0;
+}
+
+.btn.btn-sm {
+    padding: .5rem 1.0rem !important;
+}
+
+.hidden {
+    pointer-events: none;
+}
+
+.card-body-radius {
+    border-radius: 1em;
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    text-align: center;
+}
+
+.number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+}
+
+.number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+}
+
+.number-input.number-input button.minus {
+    padding-left: 10px;
+}
+
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+}
+
+.number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+        .number-input.def-number-input.safari_only button:before, .number-input.def-number-input.safari_only button:after {
+            margin-top: -.3rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn2 {
+        padding: 0.1rem !important;
+        margin: 0.1rem !important;
+    }
+    .w55 {
+        width: 29px !important;
+        height: 50px !important;
+        font-size: 9px;
+        /*width: 50px!important;*/
+        /*height: 50px!important;*/
+    }
+    .w64 {
+        width: 43px !important;
+        height: 55px !important;
+        font-size: 11px;
+        /*width: 55px!important;*/
+        /*height: 55px!important;*/
+    }
+    .w78 {
+        width: 77px !important;
+        height: 74px !important;
+    }
+    .card-body {
+        padding: 0rem;
+    }
+    .col-12 {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+    .col-sm-12,
+    .col-md-8 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .ratio {
+        text-align: center;
+        color: white;
+        padding: 5px;
+        background-color: #004d40 !important;
+        border-radius: 5px;
+        height: 20px!important;
+    }
+    label {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .btn {
+        padding: .84rem 0.84rem;
+    }
+}
+
+
+/*----------------- for test ---------------------*/
+
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    text-align: center;
+}
+
+.number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+}
+
+.number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+}
+
+.number-input.number-input button.minus {
+    padding-left: 10px;
+}
+
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+}
+
+.number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+        .number-input.def-number-input.safari_only button:before, .number-input.def-number-input.safari_only button:after {
+            margin-top: -.3rem;
+        }
+    }
+}
+
+#radioBtn .notActive {
+    color: #000;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+#radioBtn .active {
+    color: #183319;
+    background-color: #cccc64!important;
+    font-size: 15px;
+}
+
+#listuaerwin {
+    background-color: #151e23;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    overflow: hidden;
+    height: 408px;
+    padding: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#listuaerwin::-webkit-scrollbar {
+    display: none;
+}
+
+.time-h {
+    font-size: 11px;
+}
+
+#userwin {
+    /*background-color: #212529;*/
+    position: relative;
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 30px;
+    padding: 5px 0;
+}
+
+#userHistory {
+    /*background-color: #212529;*/
+    position: relative;
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 30px;
+    padding: 5px 0;
+}
+
+#userwin th,
+#userwin td {
+    color: #8ca3ad;
+}
+
+#userwin>div,
+#userHistory>div {
+    color: white;
+    font-weight: bold;
+}
+
+#userwin .listItem {
+    border: 1px solid white;
+}
+
+.listItem,
+.historyItem {
+    border-radius: 10px;
+    border-left-color: #6a2db3;
+    border-left-width: 4px;
+    /*height: 46px;*/
+    line-height: 38px;
+    margin-top: 6px;
+    color: white;
+    cursor: pointer;
+    background-color: #151e23;
+    padding: 8px 0;
+}
+
+.listItem:hover {
+    background-color: #3d3e4c;
+}
+
+.listItem:nth-child(2n+0),
+.historyItem:nth-child(2n+0) {
+    border-left-color: #13b893;
+    background-color: #3f3f3f;
+}
+
+.listItem:nth-child(3n+0) {
+    border-left-color: #c6084a;
+}
+
+.listItem:nth-child(4n+0) {
+    border-left-color: #d27e1b;
+}
+
+.listItem:nth-child(5n+0) {
+    border-left-color: #018033;
+}
+
+.listItem>div {
+    color: white;
+}
+
+.listItem .winlist {
+    color: #7ed321;
+}
+
+.badge-win {
+    background: rgb(90, 0, 123);
+    background: linear-gradient(180deg, rgba(90, 0, 123, 1) 0%, rgba(190, 96, 225, 1) 100%);
+    padding: 8px 22px;
+    margin-left: -13px;
+}
+
+.badge-lose {
+    background-color: #7c7c7c;
+    padding: 8px 22px;
+    margin-left: -13px;
+}
+
+.bglist {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: #a7ffeb;
+}
+
+.modal-header .close {
+    background-color: #986700;
+    padding: .2rem 0.5rem;
+    margin: -1rem -1rem -1rem auto;
+    border-radius: 50%;
+}
+
+.modal-header .close:hover {
+    background-color: #984a08;
+    color: white;
+}
+
+.panel {
+    border: 1px solid #ddd;
+    background-color: #fcfcfc;
+}
+
+.panel .btn-group {
+    margin: 15px 0 30px;
+}
+
+.panel .btn-group .btn {
+    transition: background-color .3s ease;
+}
+
+.table-filter {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.table-filter tbody tr:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.table-filter tbody tr td {
+    padding: 10px;
+    vertical-align: middle;
+    border-top-color: #eee;
+}
+
+.table-filter tbody tr.selected td {
+    background-color: #eee;
+}
+
+.table-filter tr td:first-child {
+    width: 38px;
+}
+
+.table-filter tr td:nth-child(2) {
+    width: 35px;
+}
+
+.ckbox {
+    position: relative;
+}
+
+.ckbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.ckbox label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ckbox label:before {
+    content: '';
+    top: 1px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    border: 1px solid #bbb;
+    background-color: #fff;
+}
+
+.ckbox input[type="checkbox"]:checked+label:before {
+    border-color: #2BBCDE;
+    background-color: #2BBCDE;
+}
+
+.ckbox input[type="checkbox"]:checked+label:after {
+    top: 3px;
+    left: 3.5px;
+    content: '\e013';
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Glyphicons Halflings';
+    position: absolute;
+}
+
+.table-filter .star {
+    color: #ccc;
+    text-align: center;
+    display: block;
+}
+
+.table-filter .star.star-checked {
+    color: #F0AD4E;
+}
+
+.table-filter .star:hover {
+    color: #ccc;
+}
+
+.table-filter .star.star-checked:hover {
+    color: #F0AD4E;
+}
+
+.table-filter .media-photo {
+    width: 35px;
+}
+
+.table-filter .media-body {
+    display: block;
+    /* Had to use this style to force the div to expand (wasn't necessary with my bootstrap version 3.3.6) */
+}
+
+.table-filter .media-meta {
+    font-size: 11px;
+    color: #999;
+}
+
+.table-filter .media .title {
+    color: #2BBCDE;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+}
+
+.table-filter .media .title span {
+    font-size: .8em;
+    margin-right: 20px;
+}
+
+.table-filter .media .title span.pagado {
+    color: #5cb85c;
+}
+
+.table-filter .media .title span.pendiente {
+    color: #f0ad4e;
+}
+
+.table-filter .media .title span.cancelado {
+    color: #d9534f;
+}
+
+.table-filter .media .summary {
+    font-size: 14px;
+}
+
+
+/***************menu ***********/
+
+#main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 1em;
+    background-color: #F1F1F1;
+    box-sizing: border-box;
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    background-color: #333;
+    padding: 1em;
+    box-sizing: border-box;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    text-align: left;
+    font-family: 'arial';
+    color: #F1F1F1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    height: 4em;
+    padding: 1em;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#nav:hover {
+    opacity: .6;
+}
+
+
+/*** sound radio btn***/
+
+.outerDivFull {
+    display: inline-block;
+}
+
+.switchToggle input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.switchToggle label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    max-width: 70px;
+    height: 30px;
+    background: #d1d1d1;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switchToggle label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.switchToggle input:checked+label,
+.switchToggle input:checked+input+label {
+    background: #00d321;
+}
+
+.switchToggle input+label:before,
+.switchToggle input+input+label:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+}
+
+.switchToggle input:checked+label:before,
+.switchToggle input:checked+input+label:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+}
+
+.switchToggle input:checked+label:after,
+.switchToggle input:checked+input+label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+.switchToggle label:active:after {
+    width: 60px;
+}
+
+.toggle-switchArea {
+    margin: 10px 0 10px 0;
+}
+
+#fullHeightModalRight .modal-content {
+    color: #fff;
+    background: #151e23;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+    border: 0;
+}
+
+.close {
+    color: #fff;
+}
+
+.header-board {
+    background: rgb(91, 255, 75);
+    background: linear-gradient(180deg, rgba(91, 255, 75, 1) 0%, rgba(68, 94, 40, 1) 100%);
+    margin-bottom: 10px;
+}
+
+.btn-history {
+    background-color: #c5ffbf;
+    border-radius: 10px;
+    color: #000;
+}
+
+.btn-play {
+    border: 1px solid #8dff00;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: -0.16rem 2.14rem;
+}
+
+#winBetModal .modal-dialog.cascading-modal .close {
+    color: #fff;
+    text-shadow: none;
+    outline: 0;
+    opacity: 1;
+}
+
+#winBetModal .modal-content {
+    background-color: unset;
+}
+
+#winBetModal .modal-dialog .modal-content {
+    border: 0;
+    border-radius: .125rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#winBetModal .modal-dialog.cascading-modal .modal-header .close {
+    margin-right: -1rem;
+}
+
+#winBetModal .bet-amont-win {
+    opacity: 1;
+    background-color: #00a41f;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#winBetModal .bet-amont-win p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+#winBetModal .bet-win-x {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#winBetModal .bet-win-x p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+#winBetModal .modal-dialog.cascading-modal .modal-header {
+    padding: .5rem .5rem;
+    border-radius: 23px;
+}
+
+.light-blue.darken-am {
+    background-color: #263238 !important;
+    opacity: 0.8;
+}
+
+.navbar {
+    min-height: 96px;
+}
+
+#betfault .modal-dialog.cascading-modal .modal-header {
+    background-color: none;
+}

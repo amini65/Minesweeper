@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fine Mine</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+<body>
+    <audio id="sClick">
+        <source src="sound/coin.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="sLose">
+        <source src="sound/Explosion.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="sWin">
+        <source src="sound/win.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="box-game">
+
+        <div id="board">
+
+            <div class="board-heder">
+
+            </div>
+            <div id="board-main">
+                <div id="game-box">
+                    <div id='game'>
+                        <div id="card-board">
+
+                        </div>
+                    </div>
+                </div>
+                <div id="option-game">
+                    <div id="controls">
+                        <div id="setSize" class="box-bet card mt-3 p-0 m-0">
+                            <div class="card-body m-0">
+                                <label class="col-12 text-white font-weight-bold text-center mt-2" lang="Size">Filed Size</label>
+                                <div class="col-12">
+                                    <div class="input-group d-block text-center">
+                                        <div id="radioBtn" class="btn-group">
+                                            <a class="btn btn-sm active" data-toggle="size" data-size="small" data-title="Y">Small</a>
+                                            <a class="btn btn-sm notActive" data-toggle="size" data-size="medium" data-title="X">Medium</a>
+                                            <a class="btn btn-sm notActive" data-toggle="size" data-size="big" data-title="N">Big</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="STartBet">
+                            <button class="btn greenbox">
+                                <span >Start</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='js/jquery.min.js'></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
